@@ -1,0 +1,53 @@
+.awards__item {
+    display: flex;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @mobile-small {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+.awards__date {
+    font-size: 1.06rem;
+    text-decoration: underline;
+    color: @gray;
+}
+
+.awards__content {
+    margin-left: 1.5rem;
+
+    @media @mobile-small {
+        margin-top: 0.2rem;
+        margin-left: 0;
+    }
+}
+
+.awards__title {
+    font-size: 1.06rem;
+    text-transform: uppercase;
+    color: @black;
+    font-weight: 700;
+
+    margin-bottom: 0.2rem;
+}
+
+.awards__subtitle {
+    font-size: 0.94rem;
+    color: @black;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.awards__text {
+    margin-top: 0.8rem;
+
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: @gray;
+    font-weight: 300;
+}

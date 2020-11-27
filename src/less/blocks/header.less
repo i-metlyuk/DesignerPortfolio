@@ -1,0 +1,24 @@
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+
+    &.fixed {
+        padding: 10px 0;
+        background-color: @white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+    
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

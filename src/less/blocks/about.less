@@ -1,0 +1,134 @@
+.about {
+    margin: 8.4rem 0;
+
+    @media @tablet {
+        margin: 3.4rem 0;
+    }
+
+    @media @mobile {
+        margin: 2.4rem 0;
+    }
+
+    @media @mobile-small {
+        margin: 1.4rem 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1090px;
+}
+
+.about__photo,
+.about__content {
+    width: 50%;
+
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.about__photo {
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        
+        width: 414px;
+        height: 414px;
+        background-color: #efefef;
+
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    @media @tablet {
+        margin-top: 1.5rem;
+        order: 2;
+
+        &:before {
+            width: 100%;
+            height: 350px;
+
+            left: 0;
+        }
+
+        img {
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+}
+
+.about__content {
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+
+    @media @tablet {
+        order: 1;
+        padding-left: 0;
+        margin-bottom: 2rem;
+
+        text-align: center;
+
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.about__title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: @black;
+
+    @media @notebook {
+        font-size: 2.5rem;
+    }
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+
+.about__bigtitle {
+    position: relative;
+    left: -10px;
+
+    font-size: 6.13rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #dedede;
+    line-height: 1.1;
+
+    margin-bottom: 1.4rem;
+
+    @media @notebook {
+        font-size: 4rem;
+        left: 0;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
+    }
+}
+
+.about__text {
+    margin-bottom: 2.8rem;
+
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: @gray-dark;
+    line-height: 2;
+
+}

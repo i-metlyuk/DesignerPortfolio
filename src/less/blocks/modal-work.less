@@ -1,0 +1,154 @@
+.modal-work {
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.modal-work__preview {
+    width: 65%;
+    
+    overflow: hidden;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.modal-work__photo {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-work__content {
+    width: 35%;
+
+    padding: 3.4rem 6.6rem 1rem 1.7rem;
+
+    position: relative;
+
+    @media @notebook {
+        padding: 2.9rem 3.1rem 1rem 1.2rem;
+    }
+
+    @media @tablet {
+        padding: 2.9rem 1.1rem 1rem 1.2rem;
+    }
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+
+    @media @tablet{
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__title {
+    font-size: 2.12rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 0.2rem ;
+
+    @media @tablet {
+        font-size: 1.5rem;
+    }
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @gray-dark;
+    text-transform: uppercase;
+
+    @media @tablet {
+        font-size: 1rem;
+    }
+}
+
+.modal-work__info-divider {
+    margin: 0 1rem;
+}
+
+.modal-work__client {
+    margin-bottom: 2.2rem;
+
+    @media @tablet {
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__client-title {
+    margin-bottom: 0.2rem;
+
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work__client-company {
+    font-weight: 0.94rem;
+    font-style: italic;
+    color: @gray-dark;
+}
+
+.modal-work__text {
+    margin-bottom: 8.66rem;
+    
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 300;
+    color: @gray-dark;
+
+    @media @notebook {
+        margin-bottom: 4.5rem;
+        line-height: 1.7;
+    }
+
+    @media @tablet {
+        margin-bottom: 2.5rem;
+        line-height: 1.2;
+    }
+
+    @media @mobile {
+        margin-bottom: 1rem;
+    }
+}
+
+.modal-work__footer {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0 1.8rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    @media @mobile {
+        top: -82%;
+    }
+}
+
+.modal-work__btn {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: none;
+
+    font-family: inherit;
+    font-size: 0.94rem;
+    color: @black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
